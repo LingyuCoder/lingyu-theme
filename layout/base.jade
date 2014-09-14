@@ -1,0 +1,13 @@
+doctype html
+block vars
+  - var bodyclass = null;
+html(lang='en')
+  head
+    include _partial/head
+  body(class=bodyclass)
+    include _partial/header
+    section#wrapper
+        div#main
+            block content
+        include _partial/aside
+    include _partial/footer

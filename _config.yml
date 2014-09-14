@@ -1,0 +1,69 @@
+##### Menu
+menu:
+  home: /
+  archives: /archives
+  about: /about
+
+##### Author information
+feed: ##eg: 'atom' will be '/atom.xml'
+github: ##eg: 'git_name' will be 'http://github.com/git_name'
+weibo: ##eg: 'weibo_name' will be 'http://weibo.com/weibo_name'
+twitter: ##eg: 'twitter_name' will be 'http://twitter.com/twitter_name'
+facebook: ##eg: 'facebook_name' will be 'http://facebook.com/facebook_name'
+
+##### Avatar
+avatar: 
+  enable: true ##if false, the avatar will be hidden
+  link: /about.html ##where to go when the avatar is clicked
+  image: images/avatar.jpg ##the picture
+
+##### Google Analytics
+google_analytics: 
+  enable: false
+  id: ##your google analytics ID
+  site: ##your site
+
+##### Baidu Analytics
+baidu_tongji:
+  enable: false
+  id: ##your baidu analytics ID
+
+##### duoshuo comments
+duoshuo:
+  enable: false
+  short_name: ##your duoshuo short name
+
+##### disqus comments
+disqus:
+  enable: false
+  short_name: ##your disqus short name
+
+##### jiathis
+jiathis:
+  enable: false
+  id: ##your jiathis user ID
+
+##### widgets
+widgets:
+- recents
+- tags
+- categories
+- friends
+- archieves
+
+##provide four widgets:
+## recents: recent five posts
+## tags: all tags
+## categories: all categories
+## friends: your friends links
+## archieves: all your posts
+
+
+##### friends links
+friends:
+  baidu: http://baidu.com
+  google: http://google.com.hk
+  tmall: http://tmall.com
+
+
+

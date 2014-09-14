@@ -1,0 +1,128 @@
+@import '../_base/variables';
+#main {
+    .content {
+        img {
+            max-width: 100%;
+        }
+        figure {
+            overflow-x: scroll;
+            width: 100%;
+            margin: 1em 0;
+            table {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                width: 100%;
+                td {
+                    margin: 0;
+                    padding: 0;
+                    border: 0;
+                    vertical-align: top;
+                    background: #222 @dark_back;
+                }
+            }
+            pre {
+                font-family: Monaco, Menlo, Consolas, 'Courier New', monospace;
+                color: #c5c8c6; 
+                padding: 1em .5em;
+                white-space: pre;
+                margin: 0;
+                border: 0;
+                background: none;
+            }
+            .gutter {
+                width: 3em;
+                pre {
+                    color: #666;
+                    text-align: right;
+                }
+            }
+        }
+        code {
+            font-family: Monaco, Menlo, Consolas, 'Courier New', monospace;
+            color: #ea2765;
+            font-size: 80%;
+            margin: 0 2px;
+            padding: 1px 4px;
+            white-space: normal;
+            border: 1px solid #ccc;
+            background-color: #f8f8f8;
+            border-radius: 3px;
+        }
+        .toc-index {
+            float: right;
+            ol {
+                list-style: none;
+            }
+        }
+    }
+    pre .comment {
+      color: #969896;
+    }
+    pre .title,
+    pre .variable,
+    pre .attribute,
+    pre .tag,
+    pre .regexp,
+    pre .ruby .constant,
+    pre .tag .title,
+    pre .pi,
+    pre .doctype,
+    pre .id,
+    pre .class,
+    pre .pseudo {
+      color: #c66;
+    }
+    pre .number,
+    pre .preprocessor,
+    pre .pragma,
+    pre .built_in,
+    pre .literal,
+    pre .params,
+    pre .constant {
+      color: #de935f;
+    }
+    pre .class .title,
+    pre .rules .attribute {
+      color: #f0c674;
+    }
+    pre .string,
+    pre .value,
+    pre .inheritance,
+    pre .header,
+    pre .symbol,
+    pre .cdata {
+      color: #b5bd68;
+    }
+    pre .css .hexcolor {
+      color: #8abeb7;
+    }
+    pre .function,
+    pre .function .title,
+    pre .decorator,
+    pre .python .title,
+    pre .title .keyword,
+    pre .perl .sub,
+    pre .javascript .title,
+    pre .coffeescript .title {
+      color: #81a2be;
+    }
+    pre .keyword,
+    pre .javascript .function {
+      color: #b294bb;
+    }
+    pre .coffeescript .javascript,
+    pre .javascript .xml,
+    pre .tex .formula,
+    pre .xml .javascript,
+    pre .xml .vbscript,
+    pre .xml .css,
+    pre .xml .cdata {
+      opacity: 0.5;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+      filter: alpha(opacity=50);
+    }
+    .jia {
+        overflow: hidden;
+    }
+}

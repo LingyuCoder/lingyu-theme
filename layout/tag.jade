@@ -1,0 +1,13 @@
+extends base
+
+prepend window_title
+    = page.tag
+
+block content
+    h1.type-title 
+        =page.tag
+        i.iconfont &nbsp;&#xe603;
+    - page.posts.each(function(post){
+        include _partial/article_meta
+    - })
+    include _partial/pagination

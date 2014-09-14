@@ -1,0 +1,35 @@
+@import '../_base/variables';
+@import 'post';
+@import 'content';
+@import 'pager';
+
+#main {
+    max-width: 40em;
+    margin: auto;
+    padding: 0 0;
+    .type-title {
+      color: #555;
+      margin-bottom: .5em;
+    }
+}
+
+@media only screen and (min-width:40em) {
+    #main {
+        max-width: 60em;
+        padding: 0 1em;
+    }
+}
+
+@media only screen and (min-width:60em) {
+    #main {
+        width: 40rem;
+        float: left;
+        padding: 0;
+        padding: 0 2em;
+    }
+}
+
+
+.m-mn .sorry .sorry-img{width: 100%; margin-bottom: 2rem; }
+.m-mn .sorry .sorry-desc {font-weight:bold;font-size: 2rem; color: #644F40; line-height: 1.5em; }
+  

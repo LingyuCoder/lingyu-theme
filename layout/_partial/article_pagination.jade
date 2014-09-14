@@ -1,0 +1,7 @@
+div.pager
+  if page.prev
+    a.pre(href=config.root + page.prev.path, title=page.prev.title)
+        =__('prev')
+  if page.next
+    a.next(href=config.root + page.next.path, title=page.next.title)
+        =__('next')

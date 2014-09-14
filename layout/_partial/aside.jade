@@ -1,0 +1,13 @@
+aside#aside
+    each widget in theme.widgets
+        if widget === 'recents'
+            include recents
+        else if widget === 'categories'
+            include categories
+        else if widget === 'tags'
+            include tags
+        else if widget === 'friends'
+            include friends
+        else if widget === 'archieves'
+            include archieves
+    

@@ -1,0 +1,10 @@
+section.friends
+    h3.title.iconfont 
+        =__('friends')
+        i &#xe608;
+    div.links
+        ul
+            each link, name in theme.friends
+                    li
+                        a(href=link) 
+                            =name

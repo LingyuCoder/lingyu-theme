@@ -1,0 +1,11 @@
+footer#page-footer
+    if theme.google_analytics.enable
+        span(style='float:right')
+            include ../_widget/google_analytics
+    if theme.baidu_tongji.enable
+        span(style='float:right')
+            include ../_widget/baidu_tongji
+    p &copy;Powered by
+        a(href='http://hexo.io', target='_blank', title='hexo') &nbsp;hexo&nbsp;
+        ='and Theme by'
+        a(href='https://github.com/LingyuCoder/lingyu-theme') &nbsp;LingyuCoder

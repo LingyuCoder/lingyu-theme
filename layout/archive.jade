@@ -1,0 +1,16 @@
+extends base
+
+prepend window_title
+    =__('archive_a')
+    if page.year && page.month
+        = page.year + '/' + page.month
+
+block content
+    h1.type-title 
+        =__('archive_a')
+        if page.year && page.month
+            = page.year + '/' + page.month
+    - page.posts.each(function(post){
+        include _partial/article_meta
+    - })
+    include _partial/pagination

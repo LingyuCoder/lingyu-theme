@@ -1,0 +1,22 @@
+article.post
+    div.desc
+        header
+            a(href=config.root + post.path)
+                h2.title=post.title
+            if post.subtitle
+                div.byline
+                    h4=post.subtitle
+        if post.brief
+            div.brief=post.brief
+        if post.cover
+            img.cover(src=post.cover, alt=post.title)
+        div.tags
+            - post.tags.each(function(tag){
+                a.tag(href=config.root + tag.path) 
+                    =tag.name
+            -})
+    div.info
+        div.date 
+            =post.date.format('YYYY/M/D')
+        a.detail(href=config.root + post.path) 
+            =__('read_more')

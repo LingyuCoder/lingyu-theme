@@ -1,0 +1,30 @@
+header#page-header
+	div.wrapper
+		if theme.avatar.enable
+			a(href=theme.avatar.link)
+				img.avatar(alt='avatar', src=config.root + theme.avatar.image)
+		div.title 
+			a(href=config.root)
+				= config.title
+		nav.nav
+			ul.links
+				each link,anchor in theme.menu
+					li
+						a(href=link) 
+							= __(anchor) || anchor
+			div.icons
+				if theme.feed
+					a.icon.rss(href=config.root + '#{theme.feed}.xml')
+						i.iconfont &#xe602;
+				if theme.weibo
+					a.icon.weibo(href='http://github.com/' + theme.weibo)
+						i.iconfont &#xe600;
+				if theme.github
+					a.icon.github(href='http://weibo.com/' + theme.github)
+						i.iconfont &#xe604;
+				if theme.twitter
+					a.icon.twitter(href='http://twitter.com/' + theme.twitter)
+						i.iconfont &#xe607;
+				if theme.facebook
+					a.icon.facebook(href='https://facebook.com/' + theme.facebook)
+						i.iconfont &#xe609;
