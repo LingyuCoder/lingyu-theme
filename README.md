@@ -4,6 +4,8 @@ Hexo Theme: Lingyu
 #Lingyu
 Lingyu is a theme for Hexo.
 
+[DEMO](http://plugins.lingyu.wang)
+
 #Install
 ```
 cd your-hexo-blog
