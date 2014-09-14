@@ -1,14 +1,30 @@
 @import '../_base/variables';
-.g-totop {
-    z-index: 100;
-    position: fixed;
-    right: 1rem;
-    bottom: 1rem;
+
+#totop {
+    display: none;
+    
 }
 
-@media only screen and (min-width:60em) {
-    .g-totop {
-        right: 4rem;
-        bottom: 4rem;
+@media only screen and (min-width:40rem) {
+    #totop {
+        position: fixed;
+        z-index: 100;
+        display: block;
+        width: 3rem;
+        right: 3rem;
+        bottom: 3rem;
+        height: 3rem;
+        text-align: center;
+        line-height: 3rem;
+        border-radius: .5rem;
+        font-size: 2rem;
+        background-color: #bbb;
+        color: #222;
+        opacity: .8;
+        text-decoration: none;
+        &:hover {
+            color: #fff;
+            background-color: @theme_color;
+        }
     }
 }

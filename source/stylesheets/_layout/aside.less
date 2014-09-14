@@ -1,13 +1,14 @@
 @import '../_base/variables';
 
 #aside {
-    padding: 5% 5% 0 5%;
+    padding-top: 5%;
     background: #222 @dark_back;
     color: #fff;
     font-weight: bold;
     text-align: left;
     box-shadow: 0 0 5px rgba(0, 0, 0, .2);
     section {
+        padding: 1rem;
         &:after {
             content: "";
             position: relative;
@@ -23,20 +24,20 @@
         color: #fff;
 
         &:hover {
-            color: #16a085;
+            color: @theme_color;
         }
     }
     .title {
         color: #fff;
-        line-height: 2em;
+        line-height: 2rem;
         margin-bottom: 1rem;
         white-space: nowrap;
         i {
-            margin-left: .5em;
+            margin-left: .5rem;
         }
     }
     li {
-        line-height: 1.5em;
+        line-height: 1.5rem;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -52,11 +53,11 @@
     }
     .tag-list-item {
         display: inline-block;
-        width: 45base%;
+        width: 45%;
         margin-bottom: .3rem;
     }
 }
-@media only screen and (min-width:48em) {
+@media only screen and (min-width:40rem) {
     #aside {
         &:after {
             content: "";
@@ -66,16 +67,11 @@
             visibility: hidden;
         }
         section {
-            padding-left: 2%;
-            width: 23%;
-            float: left;
-            &:after {
-                border: none
-            }
+            padding: 1rem;
         }
     }
 }
-@media only screen and (min-width:60em) {
+@media only screen and (min-width:60rem) {
     #aside {
         overflow: hidden;
         border-bottom: none;
@@ -83,10 +79,14 @@
         section {
             width: 100%;
             float: none;
+            border: none;
+            &:after {
+                display: none;
+            }
         }
     }
 }
-@media only screen and (min-width:60em) {
+@media only screen and (min-width:60rem) {
     #aside {
         background: none;
         color: #555;

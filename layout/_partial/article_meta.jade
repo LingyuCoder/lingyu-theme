@@ -17,6 +17,6 @@ article.post
             -})
     div.info
         div.date 
-            =post.date.format('YYYY/M/D')
+            =post.date.format(__('time_format'))
         a.detail(href=config.root + post.path) 
             =__('read_more')

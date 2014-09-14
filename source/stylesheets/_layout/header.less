@@ -5,19 +5,29 @@
 	font-weight: bold;
 	text-align: center;
 	box-shadow: 0 0 5px rgba(0, 0, 0, .2);
-	overflow: hidden;
+	&:after {
+		content: '';
+		display: block;
+		width: 100%;
+		height: 0;
+		visibility: hidden;
+		clear: both;
+	}
+	a {
+		text-decoration: none;
+	}
 	.wrapper {
-		max-width: 60em;
+		max-width: 60rem;
 		margin: auto;
 	}
 	.avatar {
 		display: none;
 		left: 0;
 		top: 0;
-		width: 4.5em;
-		height: 4.5em;
+		width: 4.5rem;
+		height: 4.5rem;
 		opacity: .8;
-		border: 0.25em solid #16a085;
+		border: 0.25rem solid @theme_color;
 		border-radius: 50%;
 		vertical-align: top;
 		margin-right: 1rem;
@@ -27,88 +37,83 @@
 		}
 	}
 	.title {
-		font-size: 3rem;
-		line-height: 5rem;
 		height: 5rem;
 		margin-right: 2rem;
+		font-size: 3rem;
+		line-height: 5rem;
 		cursor: pointer;
 		a {
 			color: #fff;
-			
 		}
 	}
-	a {
-		text-decoration: none;
-	}
+	
 
 	.nav {
 		display: block;
 		.links {
+			height: 5rem;
 			color: #fff;
-			
-			height: 5em;
-			line-height: 5em;
+			line-height: 5rem;
 			text-align: center;
 			li {
 				position: relative;
 				a {
 					color: #fff;
-					font-size: 1.5em;
+					font-size: 1.5rem;
 				}
 				display: inline-block;
-				padding: 0 .5em;
+				padding: 0 .5rem;
 				
 			}
 		}
 		.icons {
+			line-height: 5rem;
 			overflow: hidden;
-			line-height: 5em;
-		}
-		.icon {
-			display: inline-block;
-			vertical-align: middle;
-			opacity: .5;
-			border-radius: .2em;
-			padding: .5em;
-			height: 1.5em;
-			margin: 0 .5em;
-			font-size: 1em;
-			cursor: pointer;
-			transition: all .2s linear;
-			&:hover {
-				opacity: 1;
+			.icon {
+				display: inline-block;
+				padding: .5rem;
+				margin: 0 .5rem;
+				height: 1.5rem;
+				border-radius: .2rem;
+				vertical-align: middle;
+				opacity: .5;
+				cursor: pointer;
+				transition: all .2s linear;
+				&:hover {
+					opacity: 1;
+				}
+				i {
+					color: #fff;
+					line-height: 1.5rem;
+					vertical-align: top;
+				}
+				&.rss {
+					background-color: #faac1e;
+				}
+				&.weibo {
+					background-color: #d52727;
+				}
+				&.github {
+					background-color: #000;
+				}
+				&.twitter {
+					background-color: #55acee;	
+				}
+				&.facebook {
+					background-color: #3b5998;
+				}
 			}
-			i {
-				color: #fff;
-				line-height: 1em;
-				vertical-align: top;
-			}
-		}
-		.rss {
-			background-color: #faac1e;
-		}
-		.weibo {
-			background-color: #d52727;
-		}
-		.github {
-			background-color: #000;
-		}
-		.twitter {
-			background-color: #55acee;	
-		}
-		.facebook {
-			background-color: #3b5998;
 		}
 	}
 }
 
-@media only screen and (min-width: 40em) {
+@media only screen and (min-width: 40rem) {
 	#page-header {
-		margin-bottom: 1em;
+		margin-bottom: 1rem;
 	}
 }
 
-@media only screen and (min-width:60em) {
+@media only screen and (min-width:60rem) {
 	#page-header{
 		.avatar {
 			float: left;
@@ -118,7 +123,7 @@
 			float: left;
 			a {
 				&:hover {
-					color: #16a085;
+					color: @theme_color;
 					transition: all .2s linear;
 				}
 			}
@@ -134,7 +139,7 @@
 						left: 0;
 						width: 100%;
 						height: 6px;
-						background-color: #16a085;
+						background-color: @theme_color;
 						opacity: 0;
 						transform: translateY(15px);
 						transition: all .4s ease-in;

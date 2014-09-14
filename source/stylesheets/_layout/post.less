@@ -1,11 +1,9 @@
 @import '../_base/variables';
 .post-img() {
     width: 100%;
-    margin: .5em 0;
+    margin: .5rem 0;
     box-shadow: 0 0 4px rgba(0, 0, 0, .8);
 }
-
-
 
 #main {
     .post {
@@ -14,7 +12,7 @@
         a {
             font-weight: bold;
             text-decoration: none;
-            color: #16a085;
+            color: @theme_color;
         }
         .title {
             position: relative;
@@ -23,7 +21,7 @@
             margin-bottom: .5rem;
             padding: 0 2rem;
             left: -2rem;
-            color: #16a085;
+            color: @theme_color;
             cursor: pointer;
             transition: all .3s linear;
             &:hover {
@@ -55,7 +53,7 @@
             line-height: 2rem;
             padding: 0 1rem;
             color: #fff;
-            background-color: #16a085;
+            background-color: @theme_color;
             .date {
                 float: left;
                 margin-right: 2rem;
@@ -91,11 +89,11 @@
         .tag {
             position: relative;
             display: inline-block;
-            background-color: #775B8A;
-            color: white;
             padding: .2rem 1rem .2rem 2rem;
             margin: 0 .5rem .5rem 0;
             border-radius: 2em;
+            background-color: #775B8A;
+            color: white;
             font-size: .8rem;
             &:before {
                 content: "";
@@ -122,10 +120,10 @@
     }
 }
 
-@media only screen and (min-width:40em) {
+@media only screen and (min-width:40rem) {
     #main {
         .post {
-            margin-bottom: 1.5em;
+            margin-bottom: 1.5rem;
             box-shadow: 0 0 5px rgba(0, 0, 0, .2);
             .info {
                 display: block;
@@ -134,10 +132,10 @@
     }
 }
 
-@media only screen and (min-width:60em) {
+@media only screen and (min-width:60rem) {
     #main {
         .post {
-            margin-bottom: 2.5em;
+            margin-bottom: 2.5rem;
         }
     }
 }
