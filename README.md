@@ -6,6 +6,12 @@ Lingyu is a theme for Hexo.
 
 [DEMO](http://plugins.lingyu.wang)
 
+#Prepare
+```
+npm install --save hexo-renderer-jade
+npm install --save hexo-renderer-less
+```
+
 #Install
 ```
 cd your-hexo-blog
