@@ -1,4 +1,4 @@
-article.post
+article.post.meta(thread='/blog/' + post.path)
     div.desc
         header
             a(href=config.root + post.path)
@@ -12,11 +12,19 @@ article.post
             img.cover(src=post.cover, alt=post.title)
         div.tags
             - post.tags.each(function(tag){
-                a.tag(href=config.root + tag.path) 
+                a.blog-tag(href=config.root + tag.path) 
                     =tag.name
             -})
     div.info
         div.date 
             =post.date.format(__('time_format'))
+        if theme.duoshuo.enable
+            ul.replies
+                li.comments
+                    span.iconfont &#xe60e;
+                li.likes
+                    span.iconfont &#xe60d;
+                li.reposts
+                    span.iconfont &#xe60c;
         a.detail(href=config.root + post.path) 
             =__('read_more')

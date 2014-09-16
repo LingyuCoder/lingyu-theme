@@ -1,0 +1,32 @@
+script(type='text/javascript' src='http://cdn.staticfile.org/jquery/2.1.1-rc2/jquery.min.js')
+if theme.duoshuo.enable
+    script(type='text/javascript').
+        $(function(){
+            var duoshuoIds = [];
+            var map = {};
+            $('.meta').each(function(){
+                var $this = $(this);
+                var id = $this.attr('thread');
+                duoshuoIds.push(id);
+                map[id] = $this;
+            });
+            duoshuoIds.length && $.ajax({
+                url: 'http://api.duoshuo.com/threads/counts.jsonp',
+                data: {
+                    threads: duoshuoIds.join(','),
+                    short_name: '#{theme.duoshuo.short_name}'
+                },
+                success: function(data){
+                    $.each(data.response, function(key, value){
+                        var $el = map[key];
+                        if($el) {
+                            $.each(['comments','likes', 'reposts'], function(index, type){
+                                $el.find('.' + type).append('<span>' + value[type] + '</span>');
+                            });
+                        }
+                    });
+                },
+                dataType: 'jsonp'
+            });
+        });
+        
