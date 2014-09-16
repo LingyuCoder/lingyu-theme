@@ -9,7 +9,7 @@ Lingyu is a theme for Hexo.
 #Install
 ```
 cd your-hexo-blog
-git clone git@github.com:someus/huno.git themes/lingyu
+git clone git@github.com:LingyuCoder/lingyu-theme.git themes/lingyu
 ```
 
 #Enable
