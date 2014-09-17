@@ -8,7 +8,7 @@ article.post
             hr
             div.tags
                 - page.tags.each(function(tag){
-                    a.tag(href=config.root + tag.path)
+                    a.blog-tag(href=config.root + tag.path)
                         =tag.name
                 - })
         if theme.jiathis.enable

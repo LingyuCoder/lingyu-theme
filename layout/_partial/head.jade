@@ -10,7 +10,7 @@ block page_description
 
 title
   block window_title
-    = config.title
+    = ' | ' + config.title
 //- link(rel='alternate', href=locals.url+'/feed.xml', type='application/rss+xml', title=locals.description)
 
 link(href=config.root + 'favicon.png', rel='icon')
