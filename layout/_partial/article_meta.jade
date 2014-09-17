@@ -6,8 +6,9 @@ article.post.meta(thread='/blog/' + post.path)
             if post.subtitle
                 div.byline
                     h4=post.subtitle
-        if post.brief
-            div.brief=post.brief
+        if post.excerpt
+            div.brief
+                != post.excerpt
         if post.cover
             img.cover(src=post.cover, alt=post.title)
         div.tags
