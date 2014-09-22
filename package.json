@@ -1,0 +1,26 @@
+{
+  "name": "lingyu-theme",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "hexo-renderer-ejs": "*",
+    "hexo-renderer-stylus": "*",
+    "hexo-renderer-marked": "*"
+  },
+  "description": "Hexo Theme: Lingyu ============",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/LingyuCoder/lingyu-theme.git"
+  },
+  "keywords": [
+    "hexo",
+    "theme",
+    "blog"
+  ],
+  "author": "skyinlayer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LingyuCoder/lingyu-theme/issues"
+  },
+  "homepage": "https://github.com/LingyuCoder/lingyu-theme"
+}
