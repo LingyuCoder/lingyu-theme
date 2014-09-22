@@ -4,7 +4,7 @@ section.recent
         i &#xe601;
     div.links
         ul
-            - site.posts.slice(0, 5).each(function(post){
+            - site.posts.sort('date', -1).limit(5).each(function(post){
                 li
                     a(href=config.root + post.path)
                         = post.title
