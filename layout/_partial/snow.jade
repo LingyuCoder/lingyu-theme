@@ -1,0 +1,35 @@
+canvas#snow
+style(type='text/css').
+    #snow {
+        position: fixed;
+        display: block;
+        pointer-events: none;
+        top: 0;
+        left: 0;
+    }
+    
+script(type='text/javascript' src=config.root + 'scripts/snow.js')
+script(type='text/javascript').
+    var snow = new Snow('snow', {
+        'amount': 10,
+        'size': [8, 20],
+        'rotation': [1, 5],
+        'speed': [40, 80],
+        'swing': [0.1, 1],
+        'amplitude': [30, 50],
+        'alpha': [0.1, 0.95],
+        'images': [
+            'http://skyinlayerblog.qiniudn.com/blog/img/snow_1.png',
+            'http://skyinlayerblog.qiniudn.com/blog/img/snow_2.png',
+            'http://skyinlayerblog.qiniudn.com/blog/img/snow_3.png',
+            'http://skyinlayerblog.qiniudn.com/blog/img/snow_4.png'
+        ]
+    });
+
+    window.addEventListener('resize', function() {
+        snow.resize(window.innerWidth, window.innerHeight);
+    }, false);
+
+    window.addEventListener('load', function() {
+        snow.start();
+    }, false);
