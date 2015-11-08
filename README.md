@@ -4,7 +4,7 @@ Hexo Theme: Lingyu
 #Lingyu
 Lingyu is a theme for Hexo.
 
-[DEMO](http://lingyu.wang)
+**This theme was deprecated, the new one on [http://lingyu.wang](http://lingyu.wang) is [ly](https://github.com/LingyuCoder/ly).** 
 
 #Prepare
 ```
